@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cool Website</title>
+
+	<link rel="stylesheet" type="text/css" href="lib/css/styleguide.css">
+	<link rel="stylesheet" type="text/css" href="lib/css/gridsystem.css">
+	<link rel="stylesheet" type="text/css" href="css/storetheme.css">
+</head>
+<body>
+
+	<!-- header>h1+p -->
+	<header class="navbar">
+		<div class="container display-flex">
+			<div class="flex-none">
+				<h1>Cool Website</h1>
+			</div>
+			<div class="flex-stretch"></div>
+			<nav class="flex-none nav">
+				<ul class="container display-flex">
+					<li><a href="#article1">Link 1</a></li>
+					<li><a href="#article2">Link 2</a></li>
+					<li><a href="#article3">Link 3</a></li>
+					<li><a href="#article4">Link 4</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="card soft>"
+			<h2>Grid</h2>
+			<div class="grid">
+				<div class="col-xs-6">colum 6</div>
+				<div class="col-xs-6">colum 6</div>
+			</div>
+			<div class="grid gap xs-small md-medium">
+				<div class="col-xs-4">colum 4</div>
+				<div class="col-xs-4">colum 4</div>
+				<div class="col-xs-4">colum 4</div>
+
+				<div class="col-xs-3">colum 3</div>
+				<div class="col-xs-3">colum 3</div>
+				<div class="col-xs-3">colum 3</div>
+				<div class="col-xs-3">colum 3</div>
+
+				<div class="col-xs-3">colum 3</div>
+				<div class="col-xs-3">colum 3</div>
+				<div class="col-xs-6">colum 6</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="card soft>"
+			<h2>Responsive Grid</h2>
+			<div class="grid">
+				<div class="col-xs-12 col-md-6">colum 6</div>
+				<div class="col-xs-12 col-md-6">colum 6</div>
+			</div>
+			<div class="grid">
+				<div class="col-xs-12 col-md-4 col-xl-3">colum 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-6">colum 4</div>
+				<div class="col-xs-12 col-md-4 col-xl-3">colum 4</div>
+
+				<div class="col-xs-3">colum 3</div>
+				<div class="col-xs-3">colum 3</div>
+				<div class="col-xs-3">colum 3</div>
+				<div class="col-xs-3">colum 3</div>
+			</div>
+			<div class="grid ten gap">
+				<div class="col-xs-2">colum 2</div>
+				<div class="col-xs-2">colum 2</div>
+				<div class="col-xs-2">colum 2</div>
+				<div class="col-xs-2">colum 2</div>
+				<div class="col-xs-2">colum 2</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="grid gap xs-small md-medium">
+			<!-- .col-xs-6.col-md-3*4.>card>{Card}-->
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="card soft">
+					<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*3>Lorem40 -->
+	<div class="container">
+		<article id="article1" class="article card soft">
+			<div class="display-flex flex-align-center">
+				<div class="flex-stretch">
+					<h2>Article 1</h2>
+				</div>
+				<div class="flex-none"><small>5:20am</small></div>
+			</div>
+			<div class="article-body">
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad accusamus exercitationem cumque, reprehenderit natus illo quaerat, corporis minima quae facere eaque vero, deleniti officiis nostrum dicta similique, molestiae. Ut, nam ipsam similique labore ipsa commodi sequi! Odit excepturi dolore alias.</p>
+				<p>Aut adipisci natus necessitatibus sequi aliquam doloremque totam incidunt cupiditate saepe consequuntur, similique amet inventore. Accusantium molestiae pariatur dicta rerum nostrum architecto, nisi sit, deserunt similique natus. Nesciunt impedit, enim dolorum hic illum harum quo explicabo? Fugit rerum dignissimos quos.</p>
+				<p>Nulla quod doloremque asperiores qui! Incidunt at, aliquid quibusdam optio ut suscipit, a dignissimos. Enim adipisci, dignissimos ad molestias deserunt magnam aliquam officiis assumenda officia! Quos labore, deleniti sint distinctio odio, eum. Sapiente id assumenda nemo minima vitae velit cum.</p>
+			</div>
+		</article>
+		<article id="article2" class="article card hard">
+			<h2>Article 2</h2>
+			<div class="article-body">
+				<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Nihil, rem, ab. Repellat ut iste harum voluptatibus nostrum vero, nemo dolor, quia labore. Nam mollitia, voluptas necessitatibus. Sapiente accusantium atque earum perspiciatis. Laborum fuga, earum dicta recusandae sed nulla exercitationem, assumenda!</p>
+				<p>Quibusdam aut, facere cumque fuga, est quia labore, minus delectus blanditiis obcaecati officia quis mollitia dicta doloremque! Corporis soluta commodi enim repellat, ratione veniam tempora provident magnam exercitationem in perspiciatis consectetur nobis! Ut, voluptatibus autem libero optio distinctio deserunt quisquam.</p>
+				<p>Neque voluptates aut, harum fugiat provident aliquid unde earum enim illum soluta sequi hic et praesentium maiores natus sint obcaecati accusantium iusto tempore explicabo quod rerum esse pariatur ipsam optio. Fugit laboriosam quae quisquam culpa deleniti earum provident veniam, consequuntur.</p>
+			</div>
+		</article>
+	</div>
+	<div class="view-window" style="background-image: url('img/bg1.jpg')">
+		
+	</div>
+	<div class="container">
+		<article id="article3" class="article">
+			<h2>Article 3</h2>
+			<div class="article-body">
+				<p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Quae consequatur laborum libero laboriosam a obcaecati enim aliquam, ipsum ex, eaque velit impedit temporibus dolorem facilis expedita excepturi veniam ad sapiente nostrum? Nostrum incidunt, doloribus pariatur porro tenetur natus eum deserunt.</p>
+				<p>Pariatur minima nemo iusto reprehenderit cupiditate deleniti hic sint et veritatis repellat obcaecati dolorem quasi illum exercitationem quibusdam cum incidunt ducimus excepturi adipisci, suscipit tenetur ipsum. Accusamus id velit sed, hic adipisci suscipit voluptates exercitationem a iste eveniet vero, modi?</p>
+				<p>Tempora sunt eum saepe numquam reiciendis obcaecati voluptas illo repudiandae possimus. Atque enim eum ab distinctio esse et in quas, illum non, nulla impedit ea animi sunt at modi accusamus expedita blanditiis nisi deserunt voluptatum, perferendis deleniti dignissimos tenetur praesentium.</p>
+			</div>
+		</article>
+		<article id="article4" class="article">
+			<h2>Article 4</h2>
+			<div class="article-body">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem beatae architecto ipsa magnam fuga aspernatur eius praesentium, laudantium pariatur, ducimus corporis perferendis voluptatibus harum. Nisi blanditiis commodi ab voluptates veritatis, neque, deserunt consectetur voluptatem. Labore eaque explicabo facilis neque dolorem.</p>
+				<p>Fugiat incidunt vel ullam repellat neque qui, rem in, minus corporis odio iste nemo modi. Optio reiciendis, ab dolores molestias quae deleniti, quos voluptatibus totam ducimus iure nobis maiores architecto eius nam vitae harum nostrum obcaecati? Corporis cum maiores iusto.</p>
+				<p>Minus deleniti rem, dolore esse omnis quidem eveniet nesciunt adipisci! Voluptates magni facere labore sint inventore ut tempore quia commodi, reprehenderit! Mollitia at et consequatur, vero? Dolore, iure ex excepturi modi perspiciatis suscipit nulla assumenda harum, ratione. Numquam quidem, voluptates.</p>
+			</div>
+		</article>
+	</div>
+
+</body>
+</html>
