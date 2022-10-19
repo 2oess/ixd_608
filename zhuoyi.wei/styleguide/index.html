@@ -6,31 +6,42 @@
 
 	<link rel="stylesheet" type="text/css" href="../lib/css/styleguide.css">
 	<link rel="stylesheet" type="text/css" href="../lib/css/gridsystem.css">
+	<link rel="stylesheet" type="text/css" href="../lib/css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/storetheme.css">
+	 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 	<title>CSS Styleguide</title>
 </head>
-<body>
+<body style="background-color: #C2C0A6;">
 	
 	<!-- header>h1+p -->
-	<header class="navbar">
-		<div class="container display-flex">
-			<div class="flex-none">
-				<h1>Styleguide</h1>
-			</div>
-			<div class="flex-stretch"></div>
-			<nav class="flex-none nav">
-				<ul class="container display-flex">
-					<li><a href="#tableofcontents">Table of Contents</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	<header>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><h4>Styleguide</h4></a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav" style="float: right">
+                    <li class=""><a href="#"><h4>Table of Contents</h4></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
 	<div class="container" id="tableofcontents">
 		<h2>Table of Contents</h2>
-		<div class="card">
+		<div class="card soft">
 			<nav class="nav toc">
 				<ul>
 					<li><a href="#typography">Typography</a></li>
@@ -52,6 +63,8 @@
 						<li><a href="#buttons">Buttons</a></li>
 						<li><a href="#hotdog">Hotdog</a></li>
 					</ul>
+					<li><a href="#select">Select</a></li>
+                    <li><a href="#checkboxes">Checkboxes</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -70,51 +83,7 @@
 			<h6>Heading 6</h6>
 		</div>
 
-		<div id="shop" class="shop">
-		    <div class="shop_title">Product</div>
-		    <div class="shop_con">
-		        <div>
-		            <img src="img/img1.jpg"/>
-		            <div class="shop_name">
-		                SHOP ONE
-		            </div>
-		            <div class="shop_price">
-		                3.99$
-		            </div>
-		            <button class="buy_btn">BUY</button>
-		        </div>
-		        <div>
-		            <img src="img/img2.jpg"/>
-		            <div class="shop_name">
-		                SHOP TWO
-		            </div>
-		            <div class="shop_price">
-		                3.99$
-		            </div>
-		            <button class="buy_btn">BUY</button>
-		        </div>
-		        <div>
-		            <img src="img/img3.jpg"/>
-		            <div class="shop_name">
-		                SHOP THREE
-		            </div>
-		            <div class="shop_price">
-		                3.99$
-		            </div>
-		            <button class="buy_btn">BUY</button>
-		        </div>
-		        <div>
-		            <img src="img/img4.jpg"/>
-		            <div class="shop_name">
-		                SHOP FOUR
-		            </div>
-		            <div class="shop_price">
-		                3.99$
-		            </div>
-		            <button class="buy_btn">BUY</button>
-		        </div>
-		    </div>
-		</div>
+		
 
 		<div class="card soft" id="paragraphs">
 			<h3>Paragraphs</h3>
@@ -155,16 +124,21 @@
 
 
 
+
+
 	<div class="container">
 		<h2>View Window</h2>
+		<div class="view-window half" style="background-image: url(../img/bg2.jpg);"></div>
 	</div>
+
 
 
 
 
 	<div class="container" id="navigations">
 		<h2>Navigations</h2>
-
+		
+		</div>
 		<script>
 		const makeNav = (classes='') => {
 			const links = ['home','store','about'];
@@ -238,6 +212,18 @@
 
 	<div class="container">
 		<h2>Grid System</h2>
+		<div class="card soft">
+			<h3>Responsive Grid System</h3>
+			<div class="card soft grid gap">
+				<div class="card dark col-md-2 col-sm-6">1</div>
+				<div class="card dark col-md-2 col-sm-6">2</div>
+				<div class="card dark col-md-2 col-sm-6">3</div>
+				<div class="card dark col-md-2 col-sm-6">4</div>
+				<div class="card dark col-md-2 col-sm-6">5</div>
+				<div class="card dark col-md-2 col-sm-6">6</div>
+				</div>	
+			</div>	
+		</div>
 	</div>
 
 	
@@ -245,251 +231,205 @@
 
 	<div class="container">
 		<h2>Flex System</h2>
-	</div>
-
-
-	<script>
-	const makeTable = (classes='') => {
-		const head = ['ID','Office','Name','Email','Phone'];
-		const body = [
-			['522',"Zhuoyi Wei",'ZWEI12@art.edu','541-000'],
-			['522',"Zhuoyi Wei",'ZWEI12@art.edu','541-000'],
-			['522',"Zhuoyi Wei",'ZWEI12@art.edu','541-000'],
-			['522',"Zhuoyi Wei",'ZWEI12@art.edu','541-000'],
-			['522',"Zhuoyi Wei",'ZWEI12@art.edu','541-000'],
-		];
-
-		// let ran = Math.floor(Math.random()*links.length);
-		document.write(`
-		<table class="${classes}">
-			<thead><tr>${head.reduce((r,o)=r+`<th>${o}</th>`,'')}</tr></thead>
-			<tbody>${body.reduce((r,o,i)=>r+
-				`<tr>${
-					[i+1,...o].reduce((r,o)=r+`<td>${o}</td>`,'')
-				}</tr>`,'')
-			}</tbody>
-		</table>
-		`);
-	}
-	</script>
-	<div class="container">
-		<h2>Tables</h2>
-
 		<div class="card soft">
-			<h3>Basic Table</h3>
-
-			<table class="shop_tables">
-	            <tr>
-	                <th>ID</th>
-	                <th>Office</th>
-	                <th>Name</th>
-	                <th>Email</th>
-	                <th>Phone</th>
-	            </tr>
-	            <tr>
-	                <td>1</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>2</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>3</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>4</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>5</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-        	</table>
-		</div>
-
-
-		<div class="card soft">
-			<h3>Striped Table</h3>
-
-			<table class="shop_tables">
-	            <tr>
-	                <th>ID</th>
-	                <th>Office</th>
-	                <th>Name</th>
-	                <th>Email</th>
-	                <th>Phone</th>
-	            </tr>
-	            <tr>
-	                <td>1</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>2</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>3</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>4</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>5</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	        </table>
-		</div>
-
-		<div class="card soft">
-			<h3>Striped Lined Vertical</h3>
-
-			<table class="shop_tables" style="border: 2px solid #fff">
-	            <tr>
-	                <th>ID</th>
-	                <th>Office</th>
-	                <th>Name</th>
-	                <th>Email</th>
-	                <th>Phone</th>
-	            </tr>
-	            <tr>
-	                <td>1</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>2</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>3</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>4</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>5</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	        </table>
-		</div>
-
-		<div class="card soft">
-			<h3>Striped Lined Horizontal</h3>
-
-			<script>makeTable("table lined horizontal")</script>
-		</div>
-
-		<div class="card soft">
-			<h3>Striped Lined Border</h3>
-
-			<script>makeTable("table lined border")</script>
-		</div>
-
-		<div class="card soft">
-			<h3>Striped Lined All</h3>
-
-			<table class="shop_tables shop_tables4" border="1">
-	            <tr>
-	                <th>ID</th>
-	                <th>Office</th>
-	                <th>Name</th>
-	                <th>Email</th>
-	                <th>Phone</th>
-	            </tr>
-	            <tr>
-	                <td>1</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>2</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>3</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>4</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-	            <tr>
-	                <td>5</td>
-	                <td>156</td>
-	                <td>Danny</td>
-	                <td>andy135@eliohung.com</td>
-	                <td>415-3211</td>
-	            </tr>
-        	</table>
-		</div>
-
-		<div class="card soft">
-			<h3>Combinations</h3>
-
-			<script>makeTable("table lined vertical border striped")</script>
+			<div class="display-flex flex-align-center flex-justify-center gap">
+				<div>Text</div>
+				<div>Text</div>
+				<div>Text</div>
+			</div>
+			<div class="display-flex flex-align-center flex-justify-space-around gap">
+				<div>Text</div>
+				<div>Text</div>
+				<div>Text</div>
+			</div>
+			<div class="display-flex flex-align-center flex-justify-space-evenly gap">
+				<div>Text</div>
+				<div>Text</div>
+				<div>Text</div>
+			</div>
 		</div>
 	</div>
+
+
+<!--TABLES-->
+		
+		<script>
+   		const makeTable = (classes='') => {
+       		const head = ['ID','Office','Name','Email','Phone'];
+       		const body = [
+					['522', 'Hamilton Cline', 'hcline@academyart.edu', '555-2424'],
+					['512', 'Fred McHale', 'fmhale@academyart.edu', '555-2424'],
+					['522', 'Micheal Catanzaro', 'mcatanzaro@academyart.edu', '555-2424'],
+					['514', 'Andrea Pimentel', 'apimentel@academyart.edu', '555-2424'],
+					['516', 'DC Scarpelli', 'dscarpelli@academyart.edu', '555-2424'],
+
+				];
+
+			// let ran = Math.floor(Math.random()*links.length);
+	       document.write(`
+	       <table class="${classes}">
+	          <thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+	          <tbody>${body.reduce((r,o,i)=>r+
+	          	 `<tr>${  
+	    		    [i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')
+	    	     }</tr>`,'')
+	    	  }</tbody>
+	       </table>
+	       `);
+	    }
+		</script>
+
+		<div class="container" id="tables">
+			<h2>Tables</h2>
+
+			<div class="card soft">
+				<h3>Basic Table</h3>
+				<script>makeTable("table")</script>
+			</div>
+
+			<div class="card soft">
+				<h3>Striped Table</h3>
+				<script>makeTable("table striped")</script>
+			</div>
+
+			<div class="card soft">
+				<h3>Striped Lined Vetrical Table</h3>
+				<script>makeTable("table lined vertical")</script>
+			</div>
+
+			<div class="card soft">
+				<h3>Striped Lined Horizontal Table</h3>
+				<script>makeTable("table lined horizontal")</script>
+			</div>
+
+			<div class="card soft">
+				<h3>Lined Border Table</h3>
+				<script>makeTable("table lined border")</script>
+			</div>
+
+			<div class="card soft">
+				<h3>Striped Lined All Table</h3>
+				<script>makeTable("table lined all")</script>
+			</div>
+
+			<div class="card soft">
+				<h3>Cominations Table</h3>
+				<script>makeTable("table lined vertical border striped")</script>
+			</div>
+
+
+
+			<div class="container">
+			<h2>Figure</h2>
+
+			<div class="card soft">
+				<h3>Basic Figure</h3>
+				<figure class="figure">
+					<img src="https://via.placeholder.com/400x400?text=img" alt=""/>
+					<figcaption>Product</figcaption>
+				</figure>
+
+			</div>
+
+			<div class="card soft">
+				<h3>Figure Gride</h3>
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="https://via.placeholder.com/400x400?text=img" alt=""/>
+							<figcaption>Product</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="https://via.placeholder.com/400x400?text=img" alt=""/>
+							<figcaption>Product</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure">
+							<img src="https://via.placeholder.com/400x400?text=img" alt=""/>
+							<figcaption>Product</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="card soft">
+				<h3>Product Grid</h3>
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+							<img src="https://via.placeholder.com/400x400?text=img" alt=""/>
+							<figcaption>
+								<div>Product Name</div>
+								<div>$3.99</div>
+							</figcaption>
+						</figure>
+					</div>
+			        <div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+							<img src="https://via.placeholder.com/400x400?text=img" alt=""/>
+							<figcaption>
+								<div>Product Name</div>
+								<div>$3.99</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product">
+							<img src="https://via.placeholder.com/400x400?text=img" alt=""/>
+							<figcaption>
+								<div>Product Name</div>
+								<div>$3.99</div>
+							</figcaption>
+						</figure>
+					</div>
+			    </div>
+			</div>
+
+			<div class="card soft">
+				<h3>Product Overlay</h3>
+				<div class="grid gap">
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product-overlay">
+							<img src="https://via.placeholder.com/400x400?text=img" alt=""/>
+							<figcaption>
+								<div class="caption-body">
+									<div>Product Name</div>
+									<div>$3.99</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product-overlay">
+							<img src="https://via.placeholder.com/400x400?text=img" alt=""/>
+							<figcaption>
+								<div class="caption-body">
+									<div>Product Name</div>
+									<div>$3.99</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<figure class="figure product-overlay">
+							<img src="https://via.placeholder.com/400x400?text=img" alt=""/>
+							<figcaption>
+								<div class="caption-body">
+									<div>Product Name</div>
+									<div>$3.99</div>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+
+
 
 
 	<div class="container" id="forms">
@@ -583,37 +523,41 @@
 		</div>
 
 
-		<h2>Hotdog</h2>
 
-		<div class="card soft">
-			<div class="form-control">
-				<form>
-					<input type="search" class="hotdog" placeholder="Search">
-				</form>
-			</div>
-			<div class="form-control">
-				<form>
-					<input type="search" class="hotdog dark" placeholder="Search">
-				</form>
-			</div>
-			<div class="form-control">
-				<form class="card dark">
-					<input type="search" class="hotdog light" placeholder="Search">
-				</form>
-			</div>
-			<div class="form-control">
-				<form class="hotdog">
-					<span>&equiv;</span>
-					<input type="search" placeholder="Search">
-				</form>
-			</div>
-			<div class="form-control">
-				<form class="hotdog">
-					<input type="search" placeholder="Search">
-					<span>&equiv;</span>
-				</form>
-			</div>
-		</div>
+		<h2 id="hotdog">Hotdog</h2>
+            <div class="card soft">
+               <div class="form-control">
+                  <form>
+                     <input type="search" class="hotdog" placeholder="Search">
+                  </form>
+               </div>
+
+               <div class="form-control">
+                  <form>
+                     <input type="search" class="hotdog dark" placeholder="Search">
+                  </form>
+               </div> 
+
+               <div class="form-control">
+                  <form class="card dark">
+                     <input type="search" class="hotdog light" placeholder="Search">
+                  </form>
+               </div>  
+
+               <div class="form-control">
+                  <form class="hotdog">
+                     <span>&equiv;</span>
+                     <input type="search" placeholder="Search">
+                  </form>
+               </div>
+
+               <div class="form-control">
+                  <form class="hotdog">
+                    <input type="search" placeholder="Search">
+                    <span>&equiv;</span>
+                  </form>
+               </div>
+            </div>
 
 
 		<h2 id="select">Select</h2>
